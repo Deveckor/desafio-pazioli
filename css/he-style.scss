@@ -7,6 +7,10 @@ $secondary: #FFBA60;
 $fontRaleway: 'Raleway', sans-serif;
 $fontAbril: 'Abril Fatface', cursive;
 
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
 
 #he-header{
     margin: 32px;
@@ -95,6 +99,7 @@ $fontAbril: 'Abril Fatface', cursive;
             display: flex;
             flex-direction: column-reverse;
             gap: 24px;
+            padding-bottom: 4rem;
             
         }
     }
@@ -184,3 +189,22 @@ $fontAbril: 'Abril Fatface', cursive;
 
         }
     }
+
+#contenedor-video{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+
+    #he-seccion-precio{
+        width: 50vw;
+
+
+        p{
+            width: 80%;
+            text-align: justify;
+        }
+    }
+    #he-divpiano{
+        width: 50vw;
+    }
+}

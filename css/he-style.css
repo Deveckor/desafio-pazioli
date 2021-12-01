@@ -39,6 +39,11 @@
   background-color: #FFFFFF;
 }
 
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
 #he-header {
   margin: 32px;
   display: -webkit-box;
@@ -161,6 +166,7 @@
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   gap: 24px;
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -226,5 +232,28 @@
   #he-main #he-section01 #he-aside01 {
     display: none;
   }
+}
+
+#contenedor-video {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenedor-video #he-seccion-precio {
+  width: 50vw;
+}
+
+#contenedor-video #he-seccion-precio p {
+  width: 80%;
+  text-align: justify;
+}
+
+#contenedor-video #he-divpiano {
+  width: 50vw;
 }
 /*# sourceMappingURL=he-style.css.map */
