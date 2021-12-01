@@ -133,29 +133,98 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: col;
-          flex-direction: col;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 60px;
 }
 
-#he-main #he-section01 img {
-  border: solid;
+#he-main #he-section01 #he-div02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #he-main #he-section01 #he-aside01 {
   right: 0;
   width: 34px;
-  border: solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   gap: 24px;
+}
+
+@media (max-width: 768px) {
+  #he-header {
+    margin: 10px;
+    width: 90vw;
+  }
+  #he-header #he-div01 nav {
+    display: none;
+  }
+  #he-header #he-cart {
+    height: 37px;
+    width: 47px;
+  }
+  #he-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+  }
+  #he-main span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #858585;
+  }
+  #he-main h1 {
+    margin-top: 1rem;
+    font-family: "Abril Fatface", cursive;
+    font-weight: 400;
+    font-size: 32px;
+  }
+  #he-main #he-botonera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 32px;
+    width: 274px;
+    margin-top: 1rem;
+  }
+  #he-main #he-botonera button {
+    width: 45%;
+  }
+  #he-main #he-section01 {
+    margin-right: 0;
+  }
+  #he-main #he-section01 #he-div02 {
+    margin-top: 4rem;
+  }
+  #he-main #he-section01 #he-img01 {
+    width: 90vw;
+  }
+  #he-main #he-section01 #he-aside01 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=he-style.css.map */
