@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap');
+@import '_buttonBlack.scss';
+@import '_buttonWhite.scss';
+
+$primary: #000000;
+$secondary: #FFBA60;
+$fontRaleway: 'Raleway', sans-serif;
+$fontAbril: 'Abril Fatface', cursive;
+
+#he-header{
+    margin: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    #he-div01{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
+        nav{
+            
+            height: 32px;
+            width: 397px;
+            display: flex;
+            justify-content: space-between;
+            
+            
+            a{
+                font-family: $fontRaleway;
+                color: $primary;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+                
+            }
+            
+            
+        }
+    }
+    #he-cart{
+        height: 37px;
+        width: 47px;
+    }
+    
+
+}
+#he-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    
+
+    span{
+        font-family: $fontRaleway;
+        font-weight: 400;
+        font-size: 12px;
+        color: #858585;
+        
+    }
+    h1{
+        margin-top: 0;
+        font-family: $fontAbril;
+        font-weight: 400;
+        font-size: 56px;
+
+    }
+    #he-botonera{
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+        width: 274px;
+
+        button{
+            width: 45%;
+        }
+    }
+    #he-section01{
+        display: flex;
+        border: solid;
+        flex-direction: col;
+        img{
+            border: solid;
+            width: 90%;
+        }
+        #he-aside01{
+            right: 0;
+            width: 34px;
+            border: solid;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+    
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+1+Code:wght@500&family=Raleway:ital,wght@1,700&family=Roboto:wght@300&display=swap');
+
+.btn{
+    background-color: #000000 ;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: #3F3F3F;
+}
+.btn:active{
+    background-color: #000000;
+}
