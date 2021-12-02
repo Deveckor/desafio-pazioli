@@ -234,26 +234,125 @@
   }
 }
 
-#contenedor-video {
-  margin: 2rem;
+#contenedor-seccion2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+#contenedor-seccion2 #contenedor-video {
+  position: absolute;
+  width: inherit;
+  max-height: inherit;
+}
+
+#contenedor-seccion2 #contenedor-video video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 600px;
+}
+
+#contenedor-seccion2 #contenedor-fondo {
+  position: absolute;
+  height: 132%;
+  max-height: 600px;
+  width: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: black;
+  z-index: 1;
+  opacity: .8;
+}
+
+#contenedor-seccion2 #contenedor-informacion {
+  margin: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
+  z-index: 2;
 }
 
-#contenedor-video #he-seccion-precio {
-  width: 50vw;
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio {
+  width: 50%;
 }
 
-#contenedor-video #he-seccion-precio p {
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio h3 {
+  font-family: "Abril Fatface", cursive;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio span {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio img {
+  margin-right: 0.5rem;
+}
+
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio h2 {
+  margin-top: 1.5rem;
+  font-family: "Abril Fatface", cursive;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+#contenedor-seccion2 #contenedor-informacion #he-seccion-precio p {
   width: 80%;
   text-align: justify;
+  margin-top: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 1rem;
 }
 
-#contenedor-video #he-divpiano {
-  width: 50vw;
+#contenedor-seccion2 #contenedor-informacion #he-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+#contenedor-seccion2 #contenedor-informacion .btn {
+  width: 60%;
+  height: 32px;
+}
+
+#contenedor-seccion2 #contenedor-informacion #he-divpiano img {
+  height: 90vh;
+  width: 90vh;
 }
 /*# sourceMappingURL=he-style.css.map */

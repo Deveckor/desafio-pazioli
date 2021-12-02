@@ -1,210 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap');
-@import '_buttonBlack.scss';
-@import '_buttonWhite.scss';
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap");
+@import "_buttonBlack.scss";
+@import "_buttonWhite.scss";
 
 $primary: #000000;
-$secondary: #FFBA60;
-$fontRaleway: 'Raleway', sans-serif;
-$fontAbril: 'Abril Fatface', cursive;
+$secondary: #ffba60;
+$fontRaleway: "Raleway", sans-serif;
+$fontAbril: "Abril Fatface", cursive;
 
-*{
-    margin: 0;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  overflow-x: hidden;
 }
 
-#he-header{
-    margin: 32px;
+#he-header {
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #he-div01 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    
-    #he-div01{
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
+    width: 90%;
 
-        nav{
-            
-            height: 32px;
-            width: 397px;
-            display: flex;
-            justify-content: space-between;
-            
-            
-            a{
-                font-family: $fontRaleway;
-                color: $primary;
-                text-decoration: none;
-                font-weight: 700;
-                font-size: 16px;
-                
-            }
-            
-            
-        }
-    }
-    #he-cart{
-        height: 37px;
-        width: 47px;
-    }
-    
+    nav {
+      height: 32px;
+      width: 397px;
+      display: flex;
+      justify-content: space-between;
 
+      a {
+        font-family: $fontRaleway;
+        color: $primary;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
+  #he-cart {
+    height: 37px;
+    width: 47px;
+  }
 }
-#he-main{
+#he-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+
+  span {
+    font-family: $fontRaleway;
+    font-weight: 400;
+    font-size: 12px;
+    color: #858585;
+  }
+  h1 {
+    margin-top: 0;
+    font-family: $fontAbril;
+    font-weight: 400;
+    font-size: 56px;
+  }
+  #he-botonera {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    width: 274px;
+
+    button {
+      width: 45%;
+    }
+  }
+  #he-section01 {
+    display: flex;
+
+    width: 100vw;
+    justify-content: space-between;
+    margin-right: 60px;
+
+    #he-div02 {
+      display: flex;
+      width: 90%;
+      justify-content: center;
+    }
+    #he-aside01 {
+      right: 0;
+      width: 34px;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 24px;
+      padding-bottom: 4rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #he-header {
+    margin: 10px;
+    width: 90vw;
+
+    #he-div01 {
+      nav {
+        display: none;
+      }
+    }
+    #he-cart {
+      height: 37px;
+      width: 47px;
+    }
+  }
+  #he-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    
 
-    span{
-        font-family: $fontRaleway;
-        font-weight: 400;
-        font-size: 12px;
-        color: #858585;
-        
+    span {
+      font-family: $fontRaleway;
+      font-weight: 400;
+      font-size: 14px;
+      color: #858585;
     }
-    h1{
-        margin-top: 0;
-        font-family: $fontAbril;
-        font-weight: 400;
-        font-size: 56px;
+    h1 {
+      margin-top: 1rem;
+      font-family: $fontAbril;
+      font-weight: 400;
+      font-size: 32px;
+    }
+    #he-botonera {
+      display: flex;
+      justify-content: space-between;
+      height: 32px;
+      width: 274px;
+      margin-top: 1rem;
 
+      button {
+        width: 45%;
+      }
     }
-    #he-botonera{
-        display: flex;
-        justify-content: space-between;
-        height: 32px;
-        width: 274px;
+    #he-section01 {
+      margin-right: 0;
 
-        button{
-            width: 45%;
-        }
-    }
-    #he-section01{
-        display: flex;
-        
-        width: 100vw;
-        justify-content: space-between;
-        margin-right: 60px;
-
-       #he-div02{
-           display: flex;
-           width: 90%;
-           justify-content: center;
-       }
-        #he-aside01{
-            right: 0;
-            width: 34px;
-            display: flex;
-            flex-direction: column-reverse;
-            gap: 24px;
-            padding-bottom: 4rem;
-            
-        }
-    }
-    
-}
-@media (max-width: 768px){
-    #he-header{
-        margin: 10px;
+      #he-div02 {
+        margin-top: 4rem;
+      }
+      #he-img01 {
         width: 90vw;
-        
-        
-        
-        
-        #he-div01{
-            
-            
+      }
+
+      #he-aside01 {
+        display: none;
+      }
+    }
+  }
+}
+
+#contenedor-seccion2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     
-            nav{
-                
-                display: none;
-                
-                
-                
-                
-                
-            }
-        }
-        #he-cart{
-            height: 37px;
-            width: 47px;
-            
-        }
-        
+    
+    
+  #contenedor-video {
+    position: absolute;
+    width: inherit;
+    max-height: inherit;
+    
+    
+    video {
+     width: 100%;
+     object-fit: cover;
+     max-height: 600px;
     
     }
-    #he-main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3rem;
-        
-    
-        span{
-            font-family: $fontRaleway;
-            font-weight: 400;
-            font-size: 14px;
-            color: #858585;
-            
-        }
-        h1{
-            margin-top: 1rem;
-            font-family: $fontAbril;
-            font-weight: 400;
-            font-size: 32px;
-    
-        }
-        #he-botonera{
-            display: flex;
-            justify-content: space-between;
-            height: 32px;
-            width: 274px;
-            margin-top: 1rem;
-    
-            button{
-                width: 45%;
-            }
-        }
-        #he-section01{
-            margin-right: 0;
-            
-            #he-div02{
-                margin-top: 4rem;
-            }
-            #he-img01{
-                width: 90vw;
-                
-            }
-            
-    
-            
-            #he-aside01{
-                display: none;
-                
-            }
-        }
-
-
-        }
-    }
-
-#contenedor-video{
-    margin: 2rem;
+  }
+  #contenedor-fondo{
+      position: absolute;
+      height: 132%;
+      max-height: 600px;
+      width: 110%;
+      object-fit: cover;
+      background: black;
+      z-index: 1;
+      opacity: .8;
+  }
+  #contenedor-informacion {
+      
+    margin: 5rem;
     display: flex;
     align-items: center;
+    width: 100vw;
+    z-index: 2;
 
-    #he-seccion-precio{
-        width: 50vw;
+    #he-seccion-precio {
+        width: 50%;
 
-
-        p{
-            width: 80%;
-            text-align: justify;
-        }
+      h3{
+          font-family:$fontAbril;
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 24px;
+          margin-bottom: 1rem;
+      }
+      span{
+          font-family: $fontRaleway;
+          color: #ffffff;
+          font-weight: 400;
+          font-size: 14px;
+          margin-right: 1rem;
+      }
+      img{
+          margin-right: 0.5rem;
+          
+      }
+      h2{
+          margin-top: 1.5rem;
+        font-family:$fontAbril;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 1rem;
+      }
+        
+      p {
+        width: 80%;
+        text-align: justify;
+        margin-top: 1.5rem;
+        font-family:$fontRaleway;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 1rem;
+      }
     }
-    #he-divpiano{
-        width: 50vw;
+    #he-list{
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        font-family:$fontRaleway;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 1rem;
+
     }
+    .btn{
+        width: 60%;
+        height: 32px;
+    }
+    #he-divpiano {
+      img{
+          height: 90vh;
+          width: 90vh;
+      }
+    }
+  }
 }
