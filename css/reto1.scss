@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#FTColumna2 {
+    div {
+        margin-top: .5rem;
+    }
+}
+
+#FTColumna3 {
+    div {
+        margin-top: .5rem;
+    }
+}
+
+#FTDerechos {
+    text-align: center;
+}
+
+footer {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50vh;
+    bottom: 1rem;
+    background: linear-gradient(white, black);   
+}
