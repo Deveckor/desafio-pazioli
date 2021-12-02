@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap');
+
+
+$fontRaleway: 'Raleway', sans-serif;
+$fontAbrilF: 'Abril Fatface', cursive;
+$primaryBColor: #000000;
+$primaryWColor: #ffffff;
+$secondaryYColor: #ffba60;
+
+h2{
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+
+}
+
+main{
+    margin-top: 3rem;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient($primaryWColor, rgb(187, 184, 184), $primaryWColor);
+    align-items: center;
+
+    .contenedor{
+        height: 300px;
+        border-radius: 10px;
+        background-color: $primaryWColor;
+        /*box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);*/
+        h4{
+            border-top: dashed gray;
+            
+        }
+        .listado{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 6px;
+        }
+
+        .botones{
+            height: 35px;
+            display: flex;
+            align-items: center;
+           button{
+               width: 49%;
+               height: 32px;
+           } 
+           .enlace{
+               margin-top: 9px;
+           }
+        }
+    }
+
+}
+.div-boton{
+    display: flex;
+    justify-content: center;
+}
+.piano-boton{
+    height: 32px;
+    width: 129px;
+    margin-bottom: 50px;
+    background-color: $primaryBColor;
+    color: $primaryWColor;
+    border-radius: 10px;
+}
+.contenedor-pag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assets/fondo.svg);
+    background-size: cover;
+    opacity: .80;
+    height: 60vh;
+    align-items: center;
+}
+
+.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    
+    
+}
+.div-label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+}
+.div-input{
+    display: flex;
+    justify-content: space-between;
+    input{
+        width: 49%;
+    }
+}
+.label-mas{
+    margin-top: 16px;
+}
+.form-input{
+    background-color: $primaryBColor;
+    opacity: .60;
+    border-radius: 6px;
+    
+}
+.form-input::placeholder{
+    color: white;
+}
+.boton-form{
+    background-color: $primaryBColor;
+    color: $primaryWColor;
+    border-radius: 5px;
+}

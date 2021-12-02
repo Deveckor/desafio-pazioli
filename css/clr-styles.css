@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap");
+h2 {
+  text-align: center;
+  font-family: 'Abril Fatface';
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 3rem;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#bbb8b8), to(#ffffff));
+  background-image: linear-gradient(#ffffff, #bbb8b8, #ffffff);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contenedor {
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /*box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);*/
+}
+
+main .contenedor h4 {
+  border-top: dashed gray;
+}
+
+main .contenedor .listado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 6px;
+}
+
+main .contenedor .botones {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contenedor .botones button {
+  width: 49%;
+  height: 32px;
+}
+
+main .contenedor .botones .enlace {
+  margin-top: 9px;
+}
+
+.div-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.piano-boton {
+  height: 32px;
+  width: 129px;
+  margin-bottom: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.contenedor-pag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../assets/fondo.svg);
+  background-size: cover;
+  opacity: .80;
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60vw;
+}
+
+.div-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.div-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.div-input input {
+  width: 49%;
+}
+
+.label-mas {
+  margin-top: 16px;
+}
+
+.form-input {
+  background-color: #000000;
+  opacity: .60;
+  border-radius: 6px;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: white;
+}
+
+.form-input:-ms-input-placeholder {
+  color: white;
+}
+
+.form-input::-ms-input-placeholder {
+  color: white;
+}
+
+.form-input::placeholder {
+  color: white;
+}
+
+.boton-form {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=clr-styles.css.map */
