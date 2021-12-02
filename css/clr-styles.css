@@ -1,11 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap");
-h2 {
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+1+Code:wght@500&family=Raleway:ital,wght@1,700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+1+Code:wght@500&family=Raleway:ital,wght@1,700&family=Roboto:wght@300&display=swap");
+.btn-white {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  border: .1px solid  black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-white:hover {
+  background-color: #3F3F3F;
+}
+
+.btn-white:active {
+  background-color: #FFFFFF;
+}
+
+.btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #3F3F3F;
+}
+
+.btn:active {
+  background-color: #000000;
+}
+
+.clr-h2 {
   text-align: center;
   font-family: 'Abril Fatface';
   font-size: 2rem;
 }
 
-main {
+.clr-main {
   margin-top: 3rem;
   height: 70vh;
   display: -webkit-box;
@@ -15,23 +55,30 @@ main {
       justify-content: space-around;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#bbb8b8), to(#ffffff));
   background-image: linear-gradient(#ffffff, #bbb8b8, #ffffff);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-main .contenedor {
-  height: 300px;
+.clr-main .contenedor {
+  margin-top: 6rem;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 10px;
   background-color: #ffffff;
   /*box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.40);*/
 }
 
-main .contenedor h4 {
+.clr-main .contenedor h4 {
+  margin: 5px;
   border-top: dashed gray;
+  padding: 5px;
 }
 
-main .contenedor .listado {
+.clr-main .contenedor .listado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,22 +87,24 @@ main .contenedor .listado {
   margin-bottom: 6px;
 }
 
-main .contenedor .botones {
-  height: 35px;
+.clr-main .contenedor .botones {
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
-main .contenedor .botones button {
-  width: 49%;
+.clr-main .contenedor .botones button {
+  margin-left: 5px;
+  width: 150px;
   height: 32px;
 }
 
-main .contenedor .botones .enlace {
+.clr-main .contenedor .botones .enlace {
   margin-top: 9px;
 }
 
@@ -162,5 +211,25 @@ main .contenedor .botones .enlace {
   background-color: #000000;
   color: #ffffff;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .clr-h2 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  .clr-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 1200px;
+  }
+  .contenedor {
+    width: 90vw;
+  }
 }
 /*# sourceMappingURL=clr-styles.css.map */
