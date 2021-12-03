@@ -27,3 +27,10 @@ footer {
     bottom: 1rem;
     background: linear-gradient(white, black);   
 }
+@media (max-width: 768px){
+    section {
+        
+        flex-direction: column;
+        
+    }
+}
